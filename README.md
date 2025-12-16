@@ -70,6 +70,14 @@ Once comfortable with above simple setup you can explore more advanced features 
 multiple PCs (using static multiple choice selector variable). You can also add `pysychic` 
 to the desktop startup sequence and have it enabled by default on start. 
 
+### Advanced topics
+
+#### Changing default host/port bindings 
+
+For those wishing to move host/port bindings to something other than `0.0.0.0:5000` there 
+are `PYPSYCHIC_HOST` and `PYPSYCHIC_PORT` variables that allow for runtime tuning of those
+values
+
 ### TODO 
 
 * [ ] Authentication
