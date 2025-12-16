@@ -1,4 +1,7 @@
-.PHONY: run firewall-open firewall-close
+.PHONY: run firewall-open firewall-close requirements
+
+requirements:
+	pip install -r requirements.txt
 
 run:
 	flask --app responder run --host=0.0.0.0
