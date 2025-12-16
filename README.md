@@ -78,6 +78,11 @@ For those wishing to move host/port bindings to something other than `0.0.0.0:50
 are `PYPSYCHIC_HOST` and `PYPSYCHIC_PORT` variables that allow for runtime tuning of those
 values
 
+#### Changing firewall zone 
+
+Default firewall zone is `home` but if you'd like to use different zone you can use 
+`PYSYCHIC_FIREWALL_ZONE` variable for that.
+
 ### TODO 
 
 * [ ] Authentication
