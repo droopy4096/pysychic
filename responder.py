@@ -17,7 +17,7 @@ def nope(error):
 
 
 @app.route("/")
-def hello_world():
+def open_url():
     url= request.args.get("q","https://duckduckgo.com")
     if is_safe_url(url):
         print("{}".format(url))
