@@ -5,6 +5,16 @@ I simply needed something to allow me to communicate URL over to HTPC without
 running Kodi or any other sophisticated system and simply invoke default 
 browser
 
+### Requirements 
+
+* `python`
+* `pip`
+* GNU `make`
+* (optional) `firewalld` - not really a requirement, but it's `firewall-cmd` is 
+  required to adjust firewall rules. But only if you want `make` do it for you,
+  if you're comfortable managing your own firewall - you'll need port `5000` be 
+  open for incoming `tcp` traffic. 
+
 ### Usecase
 
 #### Devices 
@@ -38,11 +48,15 @@ On Android device, within [HTTP Shortcuts](https://http-shortcuts.rmy.ch/):
 On Linux HTPC:
 
 1. clone this repo 
-2. open up firewall
+2. install requirements
+  ```bash 
+  make requirements
+  ```
+3. open up firewall
   ```bash 
   make firewall-open
   ```
-3. run the app:
+4. run the app:
   ```bash 
   make run
   ```
